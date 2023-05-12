@@ -4,3 +4,4 @@ import seaborn as sns
 df_gasolina= pd.read_csv('gasolina.csv')
 grafico_preco=sns.lineplot(x='dia', y='venda', data=df_gasolina)
 plt.savefig('grafico_preco.png')
+grafico_preco.set(title='Preço da gasolina', xlabel='Dia',ylabel='Preço')
